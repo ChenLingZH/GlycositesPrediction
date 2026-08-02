@@ -1,0 +1,26 @@
+{
+  "n_repeats": 3,
+  "split_method": "StratifiedShuffleSplit",
+  "train_test_ratio": "80/20",
+  "base_random_state": 42,
+  "models": [
+    "XGBoost",
+    "Random Forest",
+    "SVM"
+  ],
+  "encodings": [
+    "1-mer",
+    "2-mer",
+    "3-mer",
+    "4-mer",
+    "7-mer",
+    "1-2mer",
+    "1-3mer",
+    "1-4mer",
+    "1-7mer"
+  ],
+  "bar_height": "mean test AUROC",
+  "error_bar": "sample standard deviation of test AUROC",
+  "variance_column": "sample variance with ddof=1",
+  "source_metrics": "three_repeat_auroc_values.csv"
+}
